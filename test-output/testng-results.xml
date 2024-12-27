@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-26T13:37:27 IST" name="Default suite" finished-at="2024-12-26T13:38:03 IST" duration-ms="35812">
+  <suite started-at="2024-12-27T13:36:20 IST" name="Default suite" finished-at="2024-12-27T13:36:43 IST" duration-ms="23019">
     <groups>
     </groups>
-    <test started-at="2024-12-26T13:37:27 IST" name="Default test" finished-at="2024-12-26T13:38:03 IST" duration-ms="35812">
-      <class name="testScenarios.FunctionalTestImport">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:testScenarios.FunctionalTestImport@3f363cf5]" started-at="2024-12-26T13:37:27 IST" name="initializeDriver" finished-at="2024-12-26T13:37:31 IST" duration-ms="3371" status="PASS">
+    <test started-at="2024-12-27T13:36:20 IST" name="Default test" finished-at="2024-12-27T13:36:43 IST" duration-ms="23019">
+      <class name="testScenarios.SmokeTestSuite">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:20 IST" name="initializeDriver" finished-at="2024-12-27T13:36:23 IST" duration-ms="3773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="testLoginValidCredentials()[pri:0, instance:testScenarios.FunctionalTestImport@3f363cf5]" started-at="2024-12-26T13:37:31 IST" name="testLoginValidCredentials" finished-at="2024-12-26T13:37:34 IST" duration-ms="3275" status="PASS">
+        <test-method signature="testLoginValidCredentials()[pri:0, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:23 IST" name="testLoginValidCredentials" finished-at="2024-12-27T13:36:33 IST" duration-ms="9403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginValidCredentials -->
-        <test-method signature="testLoginBatchLoader()[pri:1, instance:testScenarios.FunctionalTestImport@3f363cf5]" started-at="2024-12-26T13:37:34 IST" name="testLoginBatchLoader" finished-at="2024-12-26T13:37:36 IST" duration-ms="2173" status="PASS">
+        <test-method signature="testLoginBatchLoader()[pri:1, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:33 IST" name="testLoginBatchLoader" finished-at="2024-12-27T13:36:36 IST" duration-ms="3056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginBatchLoader -->
-        <test-method signature="testImport()[pri:2, instance:testScenarios.FunctionalTestImport@3f363cf5]" started-at="2024-12-26T13:37:36 IST" name="testImport" finished-at="2024-12-26T13:37:59 IST" duration-ms="22421" status="PASS">
+        <test-method signature="testExport()[pri:2, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:36 IST" name="testExport" finished-at="2024-12-27T13:36:37 IST" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExport -->
+        <test-method signature="testImport()[pri:3, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:37 IST" name="testImport" finished-at="2024-12-27T13:36:38 IST" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testImport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScenarios.FunctionalTestImport@3f363cf5]" started-at="2024-12-26T13:37:59 IST" name="tearDown" finished-at="2024-12-26T13:38:03 IST" duration-ms="4537" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScenarios.SmokeTestSuite@3829ac1]" started-at="2024-12-27T13:36:38 IST" name="tearDown" finished-at="2024-12-27T13:36:43 IST" duration-ms="4699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScenarios.FunctionalTestImport -->
+      </class> <!-- testScenarios.SmokeTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

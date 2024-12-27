@@ -14,25 +14,32 @@ public class ReportManager {
 
     // Initialize ExtentReports
     public static void initReport(String reportName) {
-        // Get the user directory path
+        // Get the user directory path (current working directory)
         String userDir = System.getProperty("user.dir");
         
-        // Create a new directory for the reports under the user directory
-        String reportDir = userDir + File.separator + "TestReports";
+        // Define the directory where reports will be saved
+        String reportDir = userDir + File.separator + "TestReports";  // You can change this path as needed
+        
+        // Create the directory if it doesn't exist
         File reportFolder = new File(reportDir);
         if (!reportFolder.exists()) {
-            reportFolder.mkdirs(); // Create the directory if it doesn't exist
+            reportFolder.mkdirs();  // Create the directory if it doesn't exist
         }
         
-        // Create the report file path
+        // Define the path for the report file
         String reportPath = reportDir + File.separator + reportName + ".html";
+        System.out.println("Report Path: " + reportPath);  // Debugging line to print the report path
         
-        // Initialize the HTML reporter with the report path
+        // Initialize the HTML reporter with the custom report path
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportPath);
-        htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setDocumentTitle(reportName);
-        htmlReporter.config().setReportName("Automation Test Results");
+        htmlReporter.config().setTheme(Theme.STANDARD);  // You can change the theme if needed
+        htmlReporter.config().setDocumentTitle("Automation Test Report");  // Set the document title
+        htmlReporter.config().setReportName("Automation Test Results");  // Set the report name
 
+        // Configure visibility of charts and other settings
+        htmlReporter.config().setChartVisibilityOnOpen(true);  // Show charts on opening the report
+        
+        // Initialize the ExtentReports instance and attach the HTML reporter
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
     }
@@ -72,7 +79,7 @@ public class ReportManager {
         }
     }
 
-    // Flush the report
+    // Flush the report (save the report data)
     public static void flushReport() {
         if (extent != null) {
             extent.flush();
