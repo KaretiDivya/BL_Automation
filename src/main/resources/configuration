@@ -1,0 +1,7 @@
+browser = Chrome
+url = https://192.168.1.33:4440/
+standarduser_username = Administrator
+standarduser_password = Compusoft@321
+servername = 192.168.1.33 [443] [PRD-01]
+invalidUser=Administrator
+invalidPassword=Compusoft@321
